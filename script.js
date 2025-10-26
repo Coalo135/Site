@@ -59,12 +59,10 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     if (validarNome() && validarEmail()) {
         alert('Login realizado com sucesso!');
-        // Redireciona para o dashboard
         window.location.href = 'dashboard.html';
     }
 });
 
 btnCadastro.addEventListener('click', function() {
-    // Redireciona para a página de cadastro
     window.location.href = 'cadastro.html';
 });
