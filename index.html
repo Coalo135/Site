@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS externo -->
+</head>
+<body>
+
+<div class="form-container">
+    <h3>Teste de Formulário</h3>
+    <form action="index.html" method="post" name="login" id="loginForm">
+        <div class="input-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <div class="error-message" id="nomeError">Por favor, insira seu nome.</div>
+            <div class="valid-message" id="nomeValid">Tudo certo!</div>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@dominio.com" required>
+            <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
+            <div class="valid-message" id="emailValid">Email válido!</div>
+        </div>
+        <input type="submit" value="Enviar" id="submitBtn">
+    </form>
+</div>
+
+<script src="script.js"></script> <!-- Link para o JS externo -->
+</body>
+</html>
