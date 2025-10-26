@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c8cdd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #694d4d;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: slide-up 0.5s ease-out;
+}
+
+h3 {
+    color: #fafafa;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #dddddd;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 38, 78, 0.4);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3f0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #132c46;
+}
+
+input[type="submit"].enabled {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.valid-message {
+    color: rgb(88, 255, 88);
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #e04242; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+    pointer-events: none; 
+}
+
+
+input[type="submit"].enabled {
+    background-color: #28a745;
+    opacity: 1;
+    pointer-events: all; 
+}
+
+input[type="submit"]:hover {
+    background-color: #00ff73;
+}
+
+
