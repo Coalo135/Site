@@ -56,8 +56,8 @@ emailInput.addEventListener('input', atualizarSubmitBtn);
 form.addEventListener('submit', function (event) {
     event.preventDefault();
     if (validarNome() && validarEmail()) {
-        alert('Formulário enviado com sucesso!');
-        form.reset();
-        atualizarSubmitBtn();
+        alert('Login realizado com sucesso!');
+        // Redireciona para o dashboard
+        window.location.href = 'dashboard.html';
     }
 });

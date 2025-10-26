@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h2>Meu Dashboard</h2>
+        </header>
+
+        <aside class="dashboard-sidebar">
+            <ul>
+                <li class="active">Home</li>
+                <li>Usuários</li>
+                <li>Relatórios</li>
+                <li>Configurações</li>
+            </ul>
+        </aside>
+
+        <main class="dashboard-main">
+            <div class="card">
+                <h3>Usuários Ativos</h3>
+                <p id="activeUsers">120</p>
+            </div>
+            <div class="card">
+                <h3>Novos Registros</h3>
+                <p id="newUsers">15</p>
+            </div>
+            <div class="card">
+                <h3>Total de Vendas</h3>
+                <p id="totalSales">R$ 5.200</p>
+            </div>
+            <div class="card">
+                <h3>Status do Sistema</h3>
+                <p id="systemStatus">Online</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
