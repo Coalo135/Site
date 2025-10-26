@@ -2,6 +2,8 @@ const form = document.getElementById('loginForm');
 const nomeInput = document.getElementById('nome');
 const emailInput = document.getElementById('email');
 const submitBtn = document.getElementById('submitBtn');
+const btnCadastro = document.getElementById('btnCadastro');
+
 
 function validarNome() {
     const nome = nomeInput.value.trim();
@@ -60,4 +62,9 @@ form.addEventListener('submit', function (event) {
         // Redireciona para o dashboard
         window.location.href = 'dashboard.html';
     }
+});
+
+btnCadastro.addEventListener('click', function() {
+    // Redireciona para a página de cadastro
+    window.location.href = 'cadastro.html';
 });

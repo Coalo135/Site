@@ -138,4 +138,22 @@ input[type="submit"]:hover {
     background-color: #00ff73;
 }
 
+.cadastro-link {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
 
+.cadastro-link button {
+    background: none;
+    border: none;
+    color: #00bfff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.cadastro-link button:hover {
+    color: #00ff73;
+}
